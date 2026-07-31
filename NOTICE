@@ -1,0 +1,14 @@
+本 repo 散布的模型檔為以下模型的衍生產物：
+
+  Qwen3-0.6B-Base    Copyright (c) Alibaba Cloud / Qwen Team
+  Qwen3.5-0.8B-Base  Copyright (c) Alibaba Cloud / Qwen Team
+
+兩者皆依 Apache License 2.0 釋出。授權全文：
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+所做的修改：使用 llama.cpp 的 convert_hf_to_gguf.py 轉換為 GGUF 格式，
+並以 llama-quantize 進行 Q4_K_M 量化。模型權重本身未經再訓練或微調。
+
+本 repo 及狸注音（LiliBopomofo）與 Qwen 團隊、阿里巴巴集團無任何隸屬關係，
+亦未獲其背書。
