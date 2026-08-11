@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "id": "qwen35-0.8b-base-q4_k_m-v43k",
+      "url": "https://github.com/funkeyyou/LiliBopomofo-models/releases/download/model-v43k-2026-08-11/qwen35-0.8b-base-q4_k_m-v43k.gguf",
+      "sha256": "f8b406d9da2e365e32a2feefc6f7fa460d8c201f625fef40aa8a5c8223688148",
+      "sizeBytes": 361054656,
+      "runtime": "llama.cpp",
+      "minRAMBytes": 12884901888,
+      "license": "Apache-2.0",
+      "addBOSOverride": null,
+      "recommendedParams": {
+        "associatedPhrase": {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "minMargin": 0.05
+        },
+        "nBestSentence": {
+          "alpha": 0.0,
+          "beta": 1.0,
+          "minMargin": 0.15
+        }
+      },
+      "evalProvenance": "M5 vocab-prune gate 2026-08-10：dev 66.32%／test 66.23%"
+    }
+  ]
+}
