@@ -1,6 +1,6 @@
 # 狸注音模型資產
 
-[狸注音（LiliBopomofo）](https://github.com/funkeyyou/LiliBopomofo) 的裝置端打分模型，
+[狸注音](https://funkeyyou.github.io/LiliBopomofo-models/) 的裝置端打分模型，
 以及 app 讀取的簽章 manifest。
 
 ## 檔案
@@ -26,5 +26,8 @@ manifest **同時攜帶模型網址與 α/β 重排權重**，所以它是一個
 ## 授權
 
 模型由 [Qwen/Qwen3.5-0.8B-Base](https://huggingface.co/Qwen)（Apache-2.0）
-量化並剪裁詞彙表而來，授權不變。剪裁工具與判定見主 repo 的
-`Eval/tools/prune_vocab.py` 與 `Eval/M5-VOCAB-PRUNE-GATE.md`。
+量化並剪裁詞彙表而來，授權不變（見 `NOTICE`）。
+
+## 下載狸注音
+
+https://funkeyyou.github.io/LiliBopomofo-models/
