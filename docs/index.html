@@ -71,8 +71,8 @@
   <h1>狸注音</h1>
   <p class="tag">macOS 繁體注音輸入法 — 更流暢，記得住你</p>
 
-  <a class="dl" href="https://github.com/funkeyyou/LiliBopomofo-models/releases/download/app-r2306/LiliBopomofo-r2306.dmg">下載 狸注音 r2306</a>
-  <p class="meta">15.0 MB ｜ macOS 12.0 以上 ｜ Intel 與 Apple Silicon 皆可 ｜ 已通過 Apple 公證</p>
+  <a class="dl" href="https://github.com/funkeyyou/LiliBopomofo-models/releases/download/app-r2323/LiliBopomofo-r2323.dmg">下載 狸注音 r2323</a>
+  <p class="meta">15.4 MB ｜ macOS 12.0 以上 ｜ Intel 與 Apple Silicon 皆可 ｜ 已通過 Apple 公證</p>
 </header>
 
 <h2>它跟別的注音輸入法差在哪</h2>
@@ -121,18 +121,30 @@
 <h2>驗證下載的檔案</h2>
 <p>輸入法看得到你打的每一個字，所以你有理由確認拿到的是原本那個檔案。
 在終端機執行 <code>shasum -a 256</code>，結果應該與下面完全相同：</p>
-<code class="hash">961cdd5724407d7d64ca2c9c7303374b9db7ac4f969bb67fea8eda7634bb0028</code>
+<code class="hash">3c5533f7ffd4a9d52d938e81f8fac43b59e7e04b5cf4669b0d22c6818435b763</code>
 
 <h2>更新</h2>
 <p><strong>這一版沒有自動更新。</strong>不會有任何檢查更新的連線，也不會跳通知。
 有新版時請回到這個頁面下載，直接裝上去即可，你的選字記憶不會遺失。</p>
 
 <h2>隱私</h2>
+<p><strong>打字本身永遠是離線的。</strong>選字、選字記憶、AI 智慧選字全部在你的電腦上運算，
+一個字都不會離開這台機器。</p>
 <ul>
-  <li><strong>預設完全離線</strong>，不上傳任何資料。</li>
+  <li><strong>打字：完全離線。</strong>沒有任何打字內容會被上傳。</li>
   <li>AI 智慧選字<strong>預設關閉</strong>；你主動開啟時才會徵求同意並下載模型。下載之後所有運算都在本機。</li>
   <li>選字記憶與詞庫只存在你的電腦上，權限 0600，不列入 Time Machine。</li>
   <li>沒有帳號、沒有登入、沒有使用統計回傳。</li>
+</ul>
+<p><strong>AI 助手（選配，預設完全關閉）</strong>——翻譯、摘要、改寫、對選取內容提問、語音輸入。
+這些功能<strong>需要你自己填入 AI 服務的網址與金鑰</strong>；沒填之前，一行連線程式碼都不會執行。</p>
+<ul>
+  <li>只有在你<strong>明確按下</strong>快捷鍵或選單項目的那一刻，才會把<strong>該次指定的內容</strong>
+      送到<strong>你自己設定的伺服器</strong>。不會背景送出，也不會夾帶其他東西。</li>
+  <li>網址填 <code>http://localhost:11434/v1</code>（Ollama 之類）的話，連這些功能也是全離線。</li>
+  <li>金鑰只存在 macOS 鑰匙圈裡。</li>
+  <li>可以指定某些 app（密碼管理器、網路銀行）完全停用 AI 功能。</li>
+  <li>語音輸入只在你按下快捷鍵時錄音，錄音送出後立即刪除；沒按過就不會出現麥克風權限請求。</li>
 </ul>
 
 <footer>
